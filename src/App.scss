@@ -1,0 +1,38 @@
+/**
+ * App-global styles
+ */
+@import '~@bryntum/demo-resources/scss/example.scss';
+
+#content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 70px;
+
+}
+
+
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 50px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 50; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #444444; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  //padding-top: 20px;
+  padding: 10px;
+}
+
+.date-selector{
+  position: absolute;
+  left: 10px;
+  bottom: 180px;
+  z-index: 100;
+  background-color: #fefefe;
+  border: 1px solid #667280;
+  padding: 10px;
+  border-radius: 5px
+}

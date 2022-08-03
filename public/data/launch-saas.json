@@ -1,0 +1,399 @@
+{
+  "success": true,
+
+  "project": {
+    "calendar": "general",
+    "startDate": "2019-01-14",
+    "hoursPerDay": 24,
+    "daysPerWeek": 5,
+    "daysPerMonth": 20
+  },
+
+  "calendars": {
+    "rows": [
+      {
+        "id": "general",
+        "name": "General",
+        "intervals": [
+          {
+            "recurrentStartDate": "on Sat at 0:00",
+            "recurrentEndDate": "on Mon at 0:00",
+            "isWorking": false
+          }
+        ],
+        "expanded": true,
+        "children": [
+          {
+            "id": "business",
+            "name": "Business",
+            "intervals": [
+              {
+                "recurrentStartDate": "every weekday at 12:00",
+                "recurrentEndDate": "every weekday at 13:00",
+                "isWorking": false
+              },
+              {
+                "recurrentStartDate": "every weekday at 17:00",
+                "recurrentEndDate": "every weekday at 08:00",
+                "isWorking": false
+              }
+            ]
+          },
+          {
+            "id": "night",
+            "name": "Night shift",
+            "intervals": [
+              {
+                "recurrentStartDate": "every weekday at 6:00",
+                "recurrentEndDate": "every weekday at 22:00",
+                "isWorking": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "tasks": {
+    "rows": [
+      {
+        "id": 1000,
+        "name": "Wilco Versteeg",
+        "percentDone": 50,
+        "startDate": "2019-01-14",
+        "expanded": true,
+        "children": [
+          {
+            "id": 1,
+            "name": "Hoekse scholen",
+            "percentDone": 50,
+            "duration": 10,
+            "startDate": "2019-01-14",
+            "rollup": true,
+            "endDate": "2019-01-23",
+            "expanded": true,
+            "children": [
+              {
+                "id": 11,
+                "name": "Wereld op Noord",
+                "percentDone": 50,
+                "startDate": "2019-01-14",
+                "rollup": true,
+                "duration": 3,
+                "color": "teal",
+                "endDate": "2019-01-17",
+                "cost": 200,
+                "baselines": [
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  }
+                ]
+              },
+              {
+                "id": 12,
+                "name": "Wereld op centrum",
+                "percentDone": 50,
+                "startDate": "2019-01-14",
+                "rollup": true,
+                "duration": 3,
+                "endDate": "2019-01-17",
+                "showInTimeline": true,
+                "cost": 1000,
+                "baselines": [
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  }
+                ]
+              },
+              {
+                "id": 13,
+                "name": "Wereld op zuid",
+                "percentDone": 50,
+                "startDate": "2019-01-14",
+                "rollup": true,
+                "duration": 3,
+                "endDate": "2019-01-17",
+                "cost": 1200,
+                "baselines": [
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-13T23:00:00",
+                    "endDate": "2019-01-16T23:00:00"
+                  }
+                ]
+              }
+            ],
+            "baselines": [
+              {
+                "startDate": "2019-01-13T23:00:00",
+                "endDate": "2019-01-22T23:00:00"
+              },
+              {
+                "startDate": "2019-01-13T23:00:00",
+                "endDate": "2019-01-22T23:00:00"
+              },
+              {
+                "startDate": "2019-01-13T23:00:00",
+                "endDate": "2019-01-22T23:00:00"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Niels Leijen",
+            "percentDone": 70,
+            "startDate": "2019-01-23",
+            "rollup": true,
+            "endDate": "2019-02-13",
+            "expanded": true,
+            "children": [
+              {
+                "id": 21,
+                "name": "Bol.com",
+                "percentDone": 70,
+                "startDate": "2019-01-23",
+                "rollup": true,
+                "duration": 5,
+                "endDate": "2019-01-30",
+                "cost": 500,
+                "baselines": [
+                  {
+                    "startDate": "2019-01-22T23:00:00",
+                    "endDate": "2019-01-25T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-22T23:00:00",
+                    "endDate": "2019-01-28T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-22T23:00:00",
+                    "endDate": "2019-01-29T23:00:00"
+                  }
+                ]
+              }
+            ],
+            "baselines": [
+              {
+                "startDate": "2019-01-22T23:00:00",
+                "endDate": "2019-02-08T23:00:00"
+              },
+              {
+                "startDate": "2019-01-22T23:00:00",
+                "endDate": "2019-02-11T23:00:00"
+              },
+              {
+                "startDate": "2019-01-22T23:00:00",
+                "endDate": "2019-02-12T23:00:00"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Martijn",
+            "percentDone": 20,
+            "startDate": "2019-01-14",
+            "expanded": true,
+            "children": [
+              {
+                "id": 33,
+                "name": "Stadhuis helmond",
+                "percentDone": 9,
+                "duration": 5,
+                "startDate": "2019-01-21",
+                "expanded": true,
+                "children": [
+                  {
+                    "id": 331,
+                    "name": "Tekenen",
+                    "percentDone": 20,
+                    "startDate": "2019-01-21",
+                    "duration": 10,
+                    "endDate": "2019-02-02",
+                    "showInTimeline": true,
+                    "cost": 7000,
+                    "baselines": [
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-02-01T23:00:00"
+                      },
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-02-01T23:00:00"
+                      },
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-02-01T23:00:00"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 332,
+                    "name": "Bouwen",
+                    "percentDone": 10,
+                    "startDate": "2019-01-21",
+                    "duration": 5,
+                    "endDate": "2019-01-26",
+                    "showInTimeline": true,
+                    "cost": 5000,
+                    "baselines": [
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-01-25T23:00:00"
+                      },
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-01-25T23:00:00"
+                      },
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-01-25T23:00:00"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 333,
+                    "name": "Testen",
+                    "percentDone": 0,
+                    "startDate": "2019-01-21",
+                    "duration": 10,
+                    "endDate": "2019-02-02",
+                    "cost": 2500,
+                    "baselines": [
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-02-01T23:00:00"
+                      },
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-02-01T23:00:00"
+                      },
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-02-01T23:00:00"
+                      }
+                    ]
+                  },
+                  {
+                    "id": 334,
+                    "name": "In bedrijf stellen",
+                    "percentDone": 0,
+                    "startDate": "2019-01-21",
+                    "duration": 1,
+                    "endDate": "2019-01-22",
+                    "cost": 250,
+                    "baselines": [
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-01-21T23:00:00"
+                      },
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-01-21T23:00:00"
+                      },
+                      {
+                        "startDate": "2019-01-20T23:00:00",
+                        "endDate": "2019-01-21T23:00:00"
+                      }
+                    ]
+                  }
+                ],
+                "endDate": "2019-02-02",
+                "baselines": [
+                  {
+                    "startDate": "2019-01-20T23:00:00",
+                    "endDate": "2019-02-01T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-20T23:00:00",
+                    "endDate": "2019-02-01T23:00:00"
+                  },
+                  {
+                    "startDate": "2019-01-20T23:00:00",
+                    "endDate": "2019-02-01T23:00:00"
+                  }
+                ]
+              }
+            ],
+            "endDate": "2019-02-02",
+            "baselines": [
+              {
+                "startDate": "2019-01-13T23:00:00",
+                "endDate": "2019-02-01T23:00:00"
+              },
+              {
+                "startDate": "2019-01-13T23:00:00",
+                "endDate": "2019-02-01T23:00:00"
+              },
+              {
+                "startDate": "2019-01-13T23:00:00",
+                "endDate": "2019-02-01T23:00:00"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "resources": {
+    "rows": [
+      {
+        "id": 1,
+        "name": "Joris",
+        "city": "Barcelona",
+        "calendar": "business",
+        "image": "celia.jpg"
+      },
+      { "id": 2, "name": "Martijn", "city": "London", "calendar": "business", "image": "lee.jpg" },
+      { "id": 3, "name": "Wilco", "city": "New York", "calendar": "business", "image": "macy.jpg" },
+      { "id": 4, "name": "Johan", "city": "Barcelona", "calendar": null, "image": "madison.jpg" }
+    ]
+  },
+
+  "assignments": {
+    "rows": [
+      { "id": 1, "event": 11, "resource": 1 },
+      { "id": 2, "event": 4033, "resource": 1 },
+      { "id": 3, "event": 12, "resource": 2 }
+    ]
+  },
+
+  "timeRanges": {
+    "rows": [
+      {
+        "id": 1,
+        "name": "Important date",
+        "startDate": "2019-01-30",
+        "duration": 0,
+        "durationUnit": "d",
+        "cls": "b-fa b-fa-diamond"
+      }
+    ]
+  }
+}
