@@ -30,11 +30,7 @@ function App() {
         histogramRef.current.instance.addPartner(ganttRef.current.instance);
     }, []);
 
-    // Toolbar checkboxes click handler
-    const onToolbarAction = (source) => {
-        const action = source.dataset.action;
-        histogramRef.current.instance[action] = source.checked;
-    };
+
 
     // Zoom In/Out handler
     const onZoom = ({source}) => {
@@ -45,8 +41,10 @@ function App() {
     };
     useEffect(() => {
         if (dateRange.startDate) {
-            ganttRef.current.instance.startDate = dateRange.startDate
-            ganttRef.current.instance.endDate = dateRange.endDate
+            ganttRef.current.instance.setStartDate(dateRange.startDate)
+            ganttRef.current.instance.setEndDate(dateRange.endDate)
+            histogramRef.current.instance.setStartDate(dateRange.startDate)
+            histogramRef.current.instance.setEndDate(dateRange.endDate)
         }
     }, [dateRange])
 
@@ -85,7 +83,6 @@ function App() {
                     ref={histogramRef}
                     startDate={dateRange.startDate}
                     endData={dateRange.endDate}
-                    extraData={{onToolbarAction}}
                     {...histogramConfig}
                 />
             </div>
